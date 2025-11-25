@@ -39,8 +39,6 @@
 </script>
 
   <meta charset="UTF-8" />
-  
-  <!-- REVİZE: Viewport güncellendi -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   
   <title>Skimmer Havuz - Betonarme ve Prefabrik Skimmer Sistemleri</title>
@@ -61,56 +59,13 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="tr_TR" />
   
-  <!-- REVİZE: CSS linkler güncellendi -->
-  <link rel="stylesheet" href="../css/style.css?v=4.0">
-  <link rel="stylesheet" href="../css/mobil.css?v=2.0">
+  <!-- CSS Linkler -->
+  <link rel="stylesheet" href="css/style.css?v=8.0">
+  <link rel="stylesheet" href="css/mobil.css?v=10.0">
   <link rel="canonical" href="https://www.skimmerhavuz.com/" />
   
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- REVİZE: Sadece desktop stilleri kaldı -->
-  <style>
-    /* Desktop overlay stilleri */
-    .overlay {
-      position: absolute;
-      top: 50%;
-      left: 5%;
-      transform: translateY(-50%);
-      max-width: 600px;
-      color: white;
-      font-family: 'Source Sans Pro', sans-serif;
-    }
-    .overlay h2 {
-      font-size: 32px;
-      margin-bottom: 16px;
-      font-weight: 600;
-    }
-    .overlay p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    .overlay .buttons {
-      margin-top: 24px;
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .overlay .buttons a {
-      padding: 10px 16px;
-      border: 1px solid white;
-      color: white;
-      background-color: transparent;
-      text-decoration: none;
-      font-size: 14px;
-      transition: background 0.3s, color 0.3s;
-      border-radius: 8px;
-    }
-    .overlay .buttons a:hover {
-      background-color: white;
-      color: #000;
-    }
-  </style>
 </head>
 
 <body>
@@ -122,34 +77,27 @@
     <a href="https://wa.me/905454508082" class="whatsapp" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
   </div>
 
-  <!-- REVİZE: Video arka plan - kök dizinde path değişikliği yok -->
-  <video class="video-bg" autoplay loop muted playsinline>
-    <source src="../img/site_backround.mp4" type="video/mp4">
-    Tarayıcınız video etiketini desteklemiyor.
-  </video>
+<!-- Resim Arka Plan (aynı class ile) -->
+<img class="video-bg" src="img/Backround.jpg" alt="Arka Plan">
   
-  <!-- REVİZE: Video overlay tek katman -->
+  <!-- Video Overlay -->
   <div class="video-overlay"></div>
 
-  <!-- REVİZE: Content wrapper eklendi -->
+  <!-- Content Wrapper -->
   <div class="content-wrapper">
-    <!-- İçerik ve Açıklama -->
     <div class="overlay">
-      <h1>Skimmer Nedir?</h1>
-      <p>
-        Skimmer, yüzme havuzlarında su yüzeyinde biriken yaprak, toz, böcek, bronzlaştırıcı yağ ve diğer kalıntıları temizlemek için kullanılan özel bir filtrasyon sistemidir. 
-        Suyun temizliğini ve berraklığını sağlamak amacıyla çalışan skimmer sistemi yüzey seviyesine monte edilir. Su yüzeyinden kirli tabakayı çeker ve bu sayede daha az kimyasal kullanımına, 
-        daha düşük bakım maliyetine ve sürekli temiz bir görünümüne olanak sağlayan skimmer, havuzunuzun olmazsa olmaz parçasıdır.
-      </p>
-
-      <div class="buttons">
-        <a href="/betonerme-skimmer-havuz.html">Betonarme Skimmer</a>
-        <a href="/prefabrik-skimmer-havuz.html">Prefabrik Skimmer</a>
-        <a href="#" class="btn water-hover" id="openModal">İletişim</a>
-        <a href="#teklifal">Teklif Al</a>
-      </div>
     </div>
   </div>
+
+  <!-- Menü - Sayfanın altına taşındı -->
+  <nav class="main-menu">
+    <img src="img/logo.png" alt="Garanti Havuz Logo" class="menu-logo">
+    <a href="/">Anasayfa</a>
+    <a href="/hakkimizda.html">Hakkımızda</a>
+    <a href="/skimmer-havuz.html">Skimmer Havuz</a>
+    <a href="/betonerme-havuz.html">Betonarme Havuz</a>
+    <a href="#" id="openModal">İletişim</a>
+  </nav>
 
   <!-- Popup Modal -->
   <div id="contactModal" class="modern-modal">
