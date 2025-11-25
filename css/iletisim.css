@@ -1,0 +1,425 @@
+/* =================================
+   GENEL RESET VE TEMEL STİLLER
+   ================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #37a4c8;
+}
+
+/* =================================
+   ANA CONTAINER
+   ================================= */
+.contact-container {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* =================================
+   BAŞLIK BÖLÜMÜ
+   ================================= */
+.contact-header {
+    text-align: center;
+    margin-bottom: 50px;
+    animation: fadeInDown 0.8s ease;
+}
+
+.contact-header h1 {
+    font-size: 42px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-header p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* =================================
+   İÇERİK BÖLÜMÜ (2 KOLON)
+   ================================= */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+    animation: fadeInUp 0.8s ease;
+}
+
+/* =================================
+   İLETİŞİM BİLGİLERİ BÖLÜMÜ
+   ================================= */
+.contact-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.info-item i {
+    font-size: 28px;
+    color: #37a4c8;
+    min-width: 40px;
+    margin-top: 5px;
+}
+
+.info-text h3 {
+    font-size: 20px;
+    color: #002650;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.info-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.info-text a {
+    color: #37a4c8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.info-text a:hover {
+    color: #2a8aa8;
+    text-decoration: underline;
+}
+
+/* =================================
+   HIZLI ERİŞİM BUTONLARI
+   ================================= */
+.action-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn i {
+    font-size: 20px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-whatsapp {
+    background: #25d366;
+    color: #fff;
+}
+
+.btn-whatsapp:hover {
+    background: #1fb855;
+}
+
+.btn-map {
+    background: #036;
+    color: #fff;
+}
+
+.btn-map:hover {
+    background: #024;
+}
+
+.btn-directions {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.btn-directions:hover {
+    background: #000;
+}
+
+/* =================================
+   HARİTA BÖLÜMÜ
+   ================================= */
+.map-section {
+    position: relative;
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* =================================
+   GERİ DÖN BUTONU
+   ================================= */
+.back-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-back {
+    background: rgba(255, 255, 255, 0.95);
+    color: #002650;
+    backdrop-filter: blur(10px);
+}
+
+.btn-back:hover {
+    background: #fff;
+    color: #37a4c8;
+}
+
+/* =================================
+   SOSYAL MEDYA İKONLARI
+   ================================= */
+.floating-social {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.floating-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 20px;
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+.floating-social a:hover {
+    transform: scale(1.1);
+}
+
+.floating-social .instagram {
+    background: #e1306c;
+}
+
+.floating-social .youtube {
+    background: red;
+}
+
+.floating-social .pinterest {
+    background: #bd081c;
+}
+
+.floating-social .whatsapp {
+    background: #25d366;
+}
+
+/* =================================
+   ANIMASYONLAR
+   ================================= */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =================================
+   TABLET RESPONSIVE (Max 1024px)
+   ================================= */
+@media screen and (max-width: 1024px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .map-wrapper {
+        min-height: 450px;
+    }
+    
+    .contact-header h1 {
+        font-size: 36px;
+    }
+}
+
+/* =================================
+   MOBİL RESPONSIVE (Max 768px)
+   ================================= */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        padding: 20px 15px;
+    }
+    
+    .contact-header {
+        margin-bottom: 30px;
+    }
+    
+    .contact-header h1 {
+        font-size: 28px;
+    }
+    
+    .contact-header p {
+        font-size: 16px;
+    }
+    
+    .info-card {
+        padding: 25px;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .info-item i {
+        font-size: 24px;
+    }
+    
+    .info-text h3 {
+        font-size: 18px;
+    }
+    
+    .info-text p {
+        font-size: 14px;
+    }
+    
+    .map-wrapper {
+        min-height: 350px;
+    }
+    
+    .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    /* Sosyal medya mobilde alta */
+    .floating-social {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        transform: none;
+        flex-direction: row;
+        justify-content: space-around;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 8px 0;
+        gap: 0;
+    }
+    
+    .floating-social a {
+        flex: 1;
+        height: 45px;
+        border-radius: 0;
+    }
+}
+
+/* =================================
+   KÜÇÜK MOBİL (Max 480px)
+   ================================= */
+@media screen and (max-width: 480px) {
+    .contact-header h1 {
+        font-size: 24px;
+    }
+    
+    .contact-header p {
+        font-size: 14px;
+    }
+    
+    .info-card {
+        padding: 20px;
+    }
+    
+    .info-text h3 {
+        font-size: 16px;
+    }
+    
+    .info-text p {
+        font-size: 13px;
+    }
+    
+    .map-wrapper {
+        min-height: 300px;
+    }
+    
+    .btn {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+}
